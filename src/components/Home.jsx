@@ -199,33 +199,18 @@ function Home() {
           <hr className="border-t-4 border-yellow-200 w-72 mx-auto mt-2" />
         </h2>
 
-        <div className="max-w-6xl mx-auto mt-12 px-4 md:px-8 flex flex-col md:flex-row items-center md:items-start justify-center gap-12 text-left">
-          <div className="md:w-1/2 w-full h-[400px] overflow-hidden rounded shadow-md">
-            <img
-              src="/school_logo.png"
-              alt="Headmistress"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="md:w-1/2 w-full flex flex-col justify-center">
-            <h3 className="text-4xl font-semibold text-center md:text-left">
-              Message from Our Headteacher
-              <hr className="border-t-4 border-yellow-200 w-64 mt-2" />
-            </h3>
-            <p className="text-base leading-relaxed mt-6">
-              Welcome to Divine Gems School! At Divine Gems School, we're
-              dedicated to nurturing the next generation of leaders, innovators,
-              and changemakers. Our commitment to academic excellence, character
-              development, and holistic growth empowers our learners to shine in
-              every aspect of life. We strive to create a supportive and
-              inclusive environment that fosters creativity, curiosity, and a
-              love for learning. Join us on this journey of discovery, growth,
-              and excellence! <br />
-              <br />
-              Join us on this journey of discovery, growth, and excellence!
-            </p>
-          </div>
+        <div className="max-w-4xl mx-auto mt-12 px-4 md:px-8 text-center text-[#360000]">
+          <p className="text-base leading-relaxed mt-6">
+            Welcome to Divine Gems School! At Divine Gems School, we're
+            dedicated to nurturing the next generation of leaders, innovators,
+            and changemakers. Our commitment to academic excellence, character
+            development, and holistic growth empowers our learners to shine in
+            every aspect of life. We strive to create a supportive and inclusive
+            environment that fosters creativity, curiosity, and a love for
+            learning. <br />
+            <br />
+            Join us on this journey of discovery, growth, and excellence!
+          </p>
         </div>
       </div>
     </div>
