@@ -62,7 +62,6 @@ function Home() {
         }}
       ></div>
 
-      {/* Hero Section */}
       <div
         className="flex items-center justify-center gap-16 px-8 py-16 flex-wrap"
         style={{ backgroundColor: "rgba(54, 0, 0, 0.7)", color: "#FFF9CA" }}
@@ -107,7 +106,6 @@ function Home() {
         </div>
       </div>
 
-      {/* About Section */}
       <div className="bg-white text-[#360000] text-center py-16 px-4">
         <h2 className="text-3xl mb-4">
           About Us
@@ -152,8 +150,7 @@ function Home() {
         </div>
       </div>
 
-      {/* Core Values Section */}
-      <div className="bg-[#360000] justify-center items-center text-center py-16 px-4 text-[#FFF9CA]">
+      <div className="bg-[#360000] justify-center items-center text-center py-10 px-4 text-[#FFF9CA]">
         <h2 className="text-3xl text-center mt-8 mb-4">
           Our Core Values
           <hr className="border-t-2 border-yellow-200 w-20 mx-auto mt-2 rounded" />
@@ -175,7 +172,7 @@ function Home() {
           ))}
 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="w-48 h-48 bg-[#360000] border-2 border-yellow-200 rounded p-4 text-white flex flex-col items-center justify-center text-center">
+            <div className="w-48 h-48 bg-[#360000] border-2 border-yellow-200 rounded p-4 text-#360000 flex flex-col items-center justify-center text-center">
               {activeValue ? (
                 <>
                   <h4 className="font-bold text-lg">{activeValue.title}</h4>
@@ -192,6 +189,42 @@ function Home() {
                 </>
               )}
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white text-[#360000] py-8 text-center">
+        <h2 className="text-3xl mb-4">
+          Message from the Headmistress
+          <hr className="border-t-4 border-yellow-200 w-72 mx-auto mt-2" />
+        </h2>
+
+        <div className="max-w-6xl mx-auto mt-12 px-4 md:px-8 flex flex-col md:flex-row items-center md:items-start justify-center gap-12 text-left">
+          <div className="md:w-1/2 w-full h-[400px] overflow-hidden rounded shadow-md">
+            <img
+              src="/school_logo.png"
+              alt="Headmistress"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="md:w-1/2 w-full flex flex-col justify-center">
+            <h3 className="text-4xl font-semibold text-center md:text-left">
+              Message from Our Headteacher
+              <hr className="border-t-4 border-yellow-200 w-64 mt-2" />
+            </h3>
+            <p className="text-base leading-relaxed mt-6">
+              Welcome to Divine Gems School! At Divine Gems School, we're
+              dedicated to nurturing the next generation of leaders, innovators,
+              and changemakers. Our commitment to academic excellence, character
+              development, and holistic growth empowers our learners to shine in
+              every aspect of life. We strive to create a supportive and
+              inclusive environment that fosters creativity, curiosity, and a
+              love for learning. Join us on this journey of discovery, growth,
+              and excellence! <br />
+              <br />
+              Join us on this journey of discovery, growth, and excellence!
+            </p>
           </div>
         </div>
       </div>
