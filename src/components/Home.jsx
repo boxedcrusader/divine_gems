@@ -1,7 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Home() {
+  const [activeValue, setActiveValue] = useState(null);
+
+  const coreValues = [
+    {
+      key: "E1",
+      label: "E",
+      title: "Educationally",
+      desc: "Fostering a love for learning and academic excellence.",
+    },
+    {
+      key: "M",
+      label: "M",
+      title: "Morally",
+      desc: "Upholding integrity and ethical standards.",
+    },
+    {
+      key: "P",
+      label: "P",
+      title: "Physically",
+      desc: "Encouraging healthy habits and lifestyles.",
+    },
+    {
+      key: "E2",
+      label: "E",
+      title: "Emotionally",
+      desc: "Fostering resilience and emotional intelligence.",
+    },
+    {
+      key: "S1",
+      label: "S",
+      title: "Socially",
+      desc: "Building strong relationships and communities.",
+    },
+    {
+      key: "S2",
+      label: "S",
+      title: "Spiritually",
+      desc: "Believing in a higher power and purpose.",
+    },
+  ];
+
+  const positions = [
+    { top: "-1rem", left: "50%", transform: "translateX(-50%)" },
+    { top: "25%", right: 0, transform: "translateX(0%)" },
+    { bottom: "25%", right: 0, transform: "translateX(0%)" },
+    { bottom: "-1rem", left: "50%", transform: "translateX(-50%)" },
+    { bottom: "25%", left: 0, transform: "translateX(0%)" },
+    { top: "25%", left: 0, transform: "translateX(0%)" },
+  ];
+
   return (
     <div className="relative">
       <div
@@ -11,25 +61,22 @@ function Home() {
           zIndex: -1,
         }}
       ></div>
+
+      {/* Hero Section */}
       <div
         className="flex items-center justify-center gap-16 px-8 py-16 flex-wrap"
-        style={{
-          backgroundColor: "rgba(54, 0, 0, 0.7)",
-          color: "#FFFFFF",
-        }}
+        style={{ backgroundColor: "rgba(54, 0, 0, 0.7)", color: "#FFF9CA" }}
       >
         <div className="max-w-xl flex flex-col gap-6">
           <h1 className="text-6xl sm:text-7xl font-bold leading-tight">
-            Divine Gem <br /> School <br />
+            Divine Gems <br /> School <br />
             <hr className="border-t-4 border-yellow-200 w-72" />
           </h1>
-
           <p className="text-xl sm:text-xl leading-relaxed">
             We create opportunities for academic growth in a supportive
             environment. Our goal is to build confident, disciplined, and
             self-reliant learners.
           </p>
-
           <Link
             to="/admission"
             className="inline-flex items-center gap-2 w-fit bg-white text-[#360000] px-4 py-2 font-semibold rounded shadow hover:bg-yellow-100 transition"
@@ -51,7 +98,6 @@ function Home() {
             Join Us
           </Link>
         </div>
-
         <div className="max-w-sm w-full">
           <img
             src="/nice_images/lie_down.jpg"
@@ -61,30 +107,24 @@ function Home() {
         </div>
       </div>
 
+      {/* About Section */}
       <div className="bg-white text-[#360000] text-center py-16 px-4">
-        {/* Heading */}
         <h2 className="text-3xl mb-4">
           About Us
-          <hr className="border-t-2 border-black w-20 mx-auto mt-2" />
+          <hr className="border-t-4 border-yellow-200 w-20 mx-auto mt-2" />
         </h2>
 
-        {/* Content Container */}
         <div className="max-w-6xl mx-auto mt-12 px-4 md:px-8 flex flex-col md:flex-row items-center justify-center gap-12 text-left">
-          {/* Text Section */}
           <div className="md:w-1/2 flex flex-col justify-center">
             <h3 className="text-4xl font-semibold">
               Be a Part of Our <br /> Academic Success Story
             </h3>
             <p className="text-base leading-relaxed mt-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-
-          {/* Image Section */}
           <div className="md:w-1/2 flex gap-4">
-            {/* Tall Image */}
             <div className="w-1/2 h-[400px] overflow-hidden rounded">
               <img
                 src="/nice_images/student_walking.jpg"
@@ -92,8 +132,6 @@ function Home() {
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Two Stacked Images */}
             <div className="w-1/2 flex flex-col gap-4">
               <div className="h-[200px] overflow-hidden rounded">
                 <img
@@ -113,21 +151,48 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[#360000] justify-center items-center text-center py-16 px-4"
-      style={{ color: "#FFF9CA" }}>
-        <div>
-          <h2 className="text-3xl text-center mt-8 mb-4">
-            Our core values
-            <hr className="border-t-5 w-30 mx-auto mt-2 rounded"/>
-          </h2>
-        </div>
-        <div>
-          <div><p>E</p></div>
-          <div><p>M</p></div>
-          <div><p>P</p></div>
-          <div><p>E</p></div>
-          <div><p>S</p></div>
-          <div><p>S</p></div>
+
+      {/* Core Values Section */}
+      <div className="bg-[#360000] justify-center items-center text-center py-16 px-4 text-[#FFF9CA]">
+        <h2 className="text-3xl text-center mt-8 mb-4">
+          Our Core Values
+          <hr className="border-t-2 border-yellow-200 w-20 mx-auto mt-2 rounded" />
+        </h2>
+        <p>To educate a child:</p>
+        <div className="relative w-80 h-80 mx-auto mt-12">
+          {coreValues.map((item, index) => (
+            <div
+              key={item.key}
+              className="absolute cursor-pointer"
+              style={{ ...positions[index] }}
+              onMouseEnter={() => setActiveValue(item)}
+              onMouseLeave={() => setActiveValue(null)}
+            >
+              <div className="w-12 h-12 flex items-center justify-center bg-[#FFF9CA] rounded-full text-[#360000] font-bold">
+                {item.label}
+              </div>
+            </div>
+          ))}
+
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-48 h-48 bg-[#360000] border-2 border-yellow-200 rounded p-4 text-white flex flex-col items-center justify-center text-center">
+              {activeValue ? (
+                <>
+                  <h4 className="font-bold text-lg">{activeValue.title}</h4>
+                  <p className="text-sm mt-2">{activeValue.desc}</p>
+                </>
+              ) : (
+                <>
+                  <p className="hidden md:block opacity-50 text-sm text-center">
+                    Hover on a letter to learn more.
+                  </p>
+                  <p className="block md:hidden text-sm text-center">
+                    Click on a letter to learn more.
+                  </p>
+                </>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

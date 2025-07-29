@@ -1,37 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav
       className="sticky top-0 z-50 shadow-md"
-      style={{ backgroundColor: "#FFF9C4"}}
+      style={{ backgroundColor: "#360000" }}
     >
-      <div className="w-full h-20 flex items-center justify-center px-4 sm:px-6 md:px-8">
-        <div className="flex items-center h-full mr-30">
-          <img src="/school_logo.png" alt="logo" className="h-56 w-auto mt-5" />
+      <div className="flex items-center justify-between px-4 sm:px-6 md:px-8 h-20 gap-12 md:gap-20">
+        {/* Logo */}
+        <div className="flex items-center gap-4">
+          <img
+            src="/logo_2.jpg"
+            alt="logo"
+            className="h-16 md:h-20 w-auto object-contain mr-4 rounded-xl"
+          />
         </div>
+
+        {/* Nav links for desktop */}
         <div
-          className="flex space-x-10 sm:gap-8 text-lg sm:text-base font-semibold mr-25"
-          style={{ color: "#360000" }}
+          className="hidden md:flex space-x-10 text-lg font-semibold"
+          style={{ color: "#FFF9CA" }}
         >
-          <div>
-            <Link>Home</Link>
-          </div>
-          <div>
-            <Link>About</Link>
-          </div>
-          <div>
-            <Link>Admission</Link>
-          </div>
-          <div>
-            <Link>Gallery</Link>
-          </div>
-          <div>
-            <Link>Contact</Link>
-          </div>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/admission">Admission</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
+
+        {/* Hamburger menu for mobile */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+            {isOpen ? (
+              <X size={32} color="#FFF9CA" />
+            ) : (
+              <Menu size={32} color="#FFF9CA" />
+            )}
+          </button>
         </div>
       </div>
+
+      {/* Dropdown menu for mobile */}
+      {isOpen && (
+        <div
+          className="md:hidden px-4 pb-4 flex flex-col gap-3 text-lg font-semibold"
+          style={{ color: "#FFF9CA" }}
+        >
+          <Link to="/" onClick={() => setIsOpen(false)}>
+            Home
+          </Link>
+          <Link to="/about" onClick={() => setIsOpen(false)}>
+            About
+          </Link>
+          <Link to="/admission" onClick={() => setIsOpen(false)}>
+            Admission
+          </Link>
+          <Link to="/gallery" onClick={() => setIsOpen(false)}>
+            Gallery
+          </Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)}>
+            Contact
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }
