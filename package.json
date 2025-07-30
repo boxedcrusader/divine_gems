@@ -15,10 +15,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.7.1",
-<<<<<<< HEAD
-=======
     "swiper": "^11.2.10",
->>>>>>> 057d235 (Home page done)
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
