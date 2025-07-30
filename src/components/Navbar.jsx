@@ -53,15 +53,19 @@ function Navbar() {
           <Link to="/" onClick={() => setIsOpen(false)}>
             Home
           </Link>
+          <hr className="border-t-2 border-yellow-200"/>
           <Link to="/about" onClick={() => setIsOpen(false)}>
             About
           </Link>
+          <hr className="border-t-2 border-yellow-200"/>
           <Link to="/admission" onClick={() => setIsOpen(false)}>
             Admission
           </Link>
+          <hr className="border-t-2 border-yellow-200"/>
           <Link to="/gallery" onClick={() => setIsOpen(false)}>
             Gallery
           </Link>
+          <hr className="border-t-2 border-yellow-200"/>
           <Link to="/contact" onClick={() => setIsOpen(false)}>
             Contact
           </Link>

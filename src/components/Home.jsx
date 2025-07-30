@@ -184,7 +184,7 @@ function Home() {
                     Hover on a letter to learn more.
                   </p>
                   <p className="block md:hidden text-sm text-center">
-                    Click on a letter to learn more.
+                    Tap on a letter to learn more.
                   </p>
                 </>
               )}
