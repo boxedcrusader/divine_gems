@@ -7,14 +7,14 @@ function Navbar() {
 
   return (
     <nav
-      className="sticky top-0 z-50 shadow-md"
+      className="sticky top-0 border-b-4 border-b-yellow-200 z-50"
       style={{ backgroundColor: "#360000" }}
     >
       <div className="flex items-center justify-between px-4 sm:px-6 md:px-8 h-20 gap-12 md:gap-20">
         {/* Logo */}
         <div className="flex items-center gap-4">
           <img
-            src="/logo_2.jpg"
+            src="/logo.jpg"
             alt="logo"
             className="h-16 md:h-20 w-auto object-contain mr-4 rounded-xl"
           />
