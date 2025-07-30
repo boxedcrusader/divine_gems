@@ -17,9 +17,12 @@ function Address() {
             development, and holistic growth empowers our learners to shine in
             every aspect of life. We strive to create a supportive and inclusive
             environment that fosters creativity, curiosity, and a love for
-            learning. <br />
+            learning. Learn, Grow, Shine with Divine Gems School.<br />
             <br />
-            Join us on this journey of discovery, growth, and excellence!
+            Learn, Grow, Shine with Divine Gems School
+          </p>
+          <p className="font-semibold">
+            Mrs. Rita Okelue
           </p>
         </div>
       </div>

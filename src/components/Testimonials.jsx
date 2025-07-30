@@ -42,7 +42,7 @@ function Testimonials() {
 
       {/* Overlay & Swiper Content */}
       <div
-        className="flex flex-col items-center justify-center px-4 py-64"
+        className="flex flex-col items-center justify-center px-4 py-60"
         style={{ backgroundColor: "rgba(54, 0, 0, 0.7)", color: "#FFF9CA" }}
       >
         <h2 className="text-4xl font-bold text-center mb-8">Testimonials</h2>
