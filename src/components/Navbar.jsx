@@ -53,6 +53,7 @@ function Navbar() {
           <Link to="/" onClick={() => setIsOpen(false)}>
             Home
           </Link>
+<<<<<<< HEAD
           <hr className="border-t-2 border-yellow-200"/>
           <Link to="/about" onClick={() => setIsOpen(false)}>
             About
@@ -66,6 +67,21 @@ function Navbar() {
             Gallery
           </Link>
           <hr className="border-t-2 border-yellow-200"/>
+=======
+          <hr className="border-t-2 border-yellow-200" />
+          <Link to="/about" onClick={() => setIsOpen(false)}>
+            About
+          </Link>
+          <hr className="border-t-2 border-yellow-200" />
+          <Link to="/admission" onClick={() => setIsOpen(false)}>
+            Admission
+          </Link>
+          <hr className="border-t-2 border-yellow-200" />
+          <Link to="/gallery" onClick={() => setIsOpen(false)}>
+            Gallery
+          </Link>
+          <hr className="border-t-2 border-yellow-200" />
+>>>>>>> 057d235 (Home page done)
           <Link to="/contact" onClick={() => setIsOpen(false)}>
             Contact
           </Link>
@@ -75,4 +91,8 @@ function Navbar() {
   );
 }
 
+<<<<<<< HEAD
 export default Navbar;
+=======
+export default Navbar;
+>>>>>>> 057d235 (Home page done)
