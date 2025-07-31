@@ -4,10 +4,13 @@ import Address from "./Address";
 import Home_About from "./Home-About";
 import Core_Values from "./Core-Values";
 import Join from "./Join";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Home() {
   return (
     <>
+      <Navbar />
       <div className="relative">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -22,6 +25,7 @@ function Home() {
       <Core_Values />
       <Address />
       <Testimonials />
+      <Footer />
     </>
   );
 }

@@ -1,15 +1,15 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import About from './components/About'
 
 function App() {
-
   return (
     <div>
-      <Navbar />
-      <Home />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   )
 }
