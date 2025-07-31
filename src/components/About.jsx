@@ -33,7 +33,7 @@ function About() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-16">
             <div className="md:w-2/3 text-[#360000] text-lg leading-relaxed text-center md:text-left">
               <div className="text-center md:text-left">
-                <h3 className="font-bold">Divine Gems School</h3>
+                <h3 className="text-3xl font-bold">Divine Gems School</h3>
                 <div className="flex justify-center md:justify-start">
                   <hr className="border-t-4 border-yellow-200 w-36 mt-2" />
                 </div>
