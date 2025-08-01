@@ -5,7 +5,8 @@ import Footer from "./Footer";
 function Contact() {
   return (
     <>
-    < Navbar/>
+      <Navbar />
+
       {/* Hero Section */}
       <div className="relative text-white text-center py-24 px-4">
         {/* Background Image */}
@@ -63,12 +64,12 @@ function Contact() {
               <strong>Email:</strong> info@divinegems.com
             </p>
             <p>
-              <strong>Address:</strong> 123 Education Avenue, Abuja, Nigeria
+              <strong>Address:</strong> 123 Education Avenue, Lagos, Nigeria
             </p>
             <div className="mt-6">
               <iframe
                 title="Google Map"
-                src="https://maps.google.com/maps?q=lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.3969789854144!2d3.3172123!3d6.6029221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9116112c99c3%3A0x11851d0a5a38e8d!2sDivine%20Gems%20Nursery%20and%20Primary%20School!5e0!3m2!1sen!2sng!4v1713360543907!5m2!1sen!2sng"
                 className="w-full h-64 rounded-md shadow-md"
                 loading="lazy"
               ></iframe>
@@ -76,6 +77,7 @@ function Contact() {
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
