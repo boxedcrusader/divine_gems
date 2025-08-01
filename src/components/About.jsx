@@ -43,30 +43,27 @@ function About() {
               {/* Subheading */}
               <div>
                 <h4 className="text-2xl font-semibold mb-2">
-                  Message from the Proprietress
+                  Message from the Director
                 </h4>
               </div>
 
               {/* Message Paragraph */}
-              <p>
-                Divine Gems School, is passionate about providing quality
-                education in a safe, warm, and supportive environment. Our goal
-                is to foster the social, emotional, and academic growth of each
-                student—educating the total child.
+              <p className="text-base leading-relaxed mt-6">
+                At Divine Gems School, we're not just building a foundation for
+                learning – we're igniting a spark for life! As director, I'm
+                thrilled to lead a team of passionate educators who share a
+                common vision: to empower students to shine. Our nurturing
+                environment, combined with academic rigour and moral guidance,
+                sets our students up for success. From accelerated progress to
+                external wins, our achievements speak for themselves. Join us on
+                this journey of discovery and growth. <br />
+                <br />
+                Let's unlock your child's full potential and shape the leaders
+                of tomorrow!
               </p>
-              <p>
-                To our students, we offer our support and guidance to help you
-                excel. To our parents, we assure you that your child's education
-                is our top priority. To the community, we are committed to
-                growing leaders who will make a positive impact.
-              </p>
-              <p>
-                Thank you for considering Divine Gems School. We look forward to
-                partnering with you in shaping the future.
-              </p>
-
+              
               {/* Signature */}
-              <p className="font-bold mt-4 text-xl">Mrs. Faith Uzor</p>
+              <p className="font-bold mt-4 text-xl">Nic Uzor</p>
             </div>
 
             <div className="md:w-1/3">
