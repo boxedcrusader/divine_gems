@@ -56,9 +56,11 @@ function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-2">Contact</h4>
           <ul className="text-sm space-y-2">
-            <li>📍 123 School Road, Abuja, Nigeria</li>
-            <li>📞 +234 812 345 6789</li>
-            <li>✉️ info@divinegems.sch.ng</li>
+            <li>
+              📍 12, Ado-odo Street, Cement Bus-stop, Onilekere Ikeja Lagos
+            </li>
+            <li>📞 <a href="https://chat.whatsapp.com/IWdegKOk0z426qh8x0xIwN?mode=ac_t">Infodesk</a></li>
+            <li><a href="mailto:divinegemsschool@gmail.com">✉️ divinegemsschool@gmail.com</a></li>
           </ul>
         </div>
       </div>

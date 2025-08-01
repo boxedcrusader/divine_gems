@@ -58,13 +58,14 @@ function Contact() {
           <div className="space-y-6 text-center md:text-left">
             <h3 className="text-2xl font-bold">Get in Touch</h3>
             <p>
-              <strong>Phone:</strong> +234 801 234 5678
+              <strong>Contact our Infodesk:</strong> <a href="https://chat.whatsapp.com/IWdegKOk0z426qh8x0xIwN?mode=ac_t">Infodesk</a>
             </p>
             <p>
-              <strong>Email:</strong> info@divinegems.com
+              <strong>Email:</strong> <a href="mailto:divinegemsschool@gmail.com">divinegemsschool@gmail.com</a>
             </p>
             <p>
-              <strong>Address:</strong> 123 Education Avenue, Lagos, Nigeria
+              <strong>Address:</strong> 12, Ado-odo Street, Cement Bus-stop,
+              Onilekere Ikeja Lagos
             </p>
             <div className="mt-6">
               <iframe

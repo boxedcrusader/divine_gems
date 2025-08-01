@@ -13,11 +13,13 @@ function Navbar() {
       <div className="flex items-center justify-between px-4 sm:px-6 md:px-8 h-20 gap-12 md:gap-20">
         {/* Logo */}
         <div className="flex items-center gap-4">
-          <img
+          <Link to={"/"}>
+            <img
             src="/logo.jpg"
             alt="logo"
             className="h-16 md:h-20 w-auto object-contain mr-4 rounded-xl"
           />
+          </Link>
         </div>
 
         {/* Nav links for desktop */}
