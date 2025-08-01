@@ -37,6 +37,9 @@ function Join() {
           </svg>
           Join Us
         </Link>
+        <div>
+          
+        </div>
       </div>
       <div className="max-w-sm w-full">
         <img

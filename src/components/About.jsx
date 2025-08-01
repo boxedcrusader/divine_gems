@@ -31,25 +31,42 @@ function About() {
         <div className="bg-white text-3xl text-[#360000] py-5 px-4 md:px-16">
           {/* About Paragraph + Image */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-16">
-            <div className="md:w-2/3 text-[#360000] text-lg leading-relaxed text-center md:text-left">
+            <div className="md:w-2/3 text-[#360000] text-lg leading-relaxed text-center md:text-left space-y-6">
+              {/* Heading Section */}
               <div className="text-center md:text-left">
                 <h3 className="text-3xl font-bold">Divine Gems School</h3>
                 <div className="flex justify-center md:justify-start">
                   <hr className="border-t-4 border-yellow-200 w-36 mt-2" />
                 </div>
               </div>
+
+              {/* Subheading */}
+              <div>
+                <h4 className="text-2xl font-semibold mb-2">
+                  Message from the Proprietress
+                </h4>
+              </div>
+
+              {/* Message Paragraph */}
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                vulputate, eros nec bibendum vestibulum, metus ipsum malesuada
-                ligula, vel tincidunt nulla nulla at erat. Ut vitae sapien nec
-                elit luctus malesuada. Nunc imperdiet, nibh non eleifend
-                egestas, nulla arcu laoreet purus, a tincidunt lorem leo sed
-                quam. Aliquam erat volutpat. Vivamus sed orci eget lorem dapibus
-                faucibus. Etiam et velit vel arcu commodo convallis. Suspendisse
-                id feugiat magna, ac accumsan nisl. Sed pretium, felis at
-                iaculis dictum, metus diam volutpat purus, sed convallis nisi
-                risus nec justo.
+                Divine Gems School, is passionate about providing quality
+                education in a safe, warm, and supportive environment. Our goal
+                is to foster the social, emotional, and academic growth of each
+                student—educating the total child.
               </p>
+              <p>
+                To our students, we offer our support and guidance to help you
+                excel. To our parents, we assure you that your child's education
+                is our top priority. To the community, we are committed to
+                growing leaders who will make a positive impact.
+              </p>
+              <p>
+                Thank you for considering Divine Gems School. We look forward to
+                partnering with you in shaping the future.
+              </p>
+
+              {/* Signature */}
+              <p className="font-bold mt-4 text-xl">Mrs. Faith Uzor</p>
             </div>
 
             <div className="md:w-1/3">
@@ -64,7 +81,7 @@ function About() {
 
         {/* Divider */}
         <div>
-          <hr className="px-4 md:px-16 border-[#360000]" />
+          <hr className="px-16 md:px-64 border-t-4 border-yellow-200" />
         </div>
 
         {/* Vision Statement Section */}

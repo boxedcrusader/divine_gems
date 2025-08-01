@@ -5,25 +5,22 @@ function Address() {
     <div>
         <div className="bg-white text-[#360000] py-8 text-center">
         <h2 className="text-4xl mb-4">
-          Message from the Headmistress
+          Message from the Director
           <hr className="border-t-4 border-yellow-200 w-72 mx-auto mt-2" />
         </h2>
 
         <div className="max-w-4xl mx-auto mt-12 px-4 md:px-8 text-center text-[#360000]">
           <p className="text-base leading-relaxed mt-6">
-            Welcome to Divine Gems School! At Divine Gems School, we're
-            dedicated to nurturing the next generation of leaders, innovators,
-            and changemakers. Our commitment to academic excellence, character
-            development, and holistic growth empowers our learners to shine in
-            every aspect of life. We strive to create a supportive and inclusive
-            environment that fosters creativity, curiosity, and a love for
-            learning. Learn, Grow, Shine with Divine Gems School.<br />
+            At Divine Gems School, we're not just building a foundation for learning – we're igniting a spark for life! As director, I'm thrilled to lead a team of passionate educators who share a common vision: to empower students to shine. Our nurturing environment, combined with academic rigour and moral guidance, sets our students up for success. From accelerated progress to external wins, our achievements speak for themselves. Join us on this journey of discovery and growth. <br />
             <br />
-            Learn, Grow, Shine with Divine Gems School
+            Let's unlock your child's full potential and shape the leaders of tomorrow!
           </p>
           <p className="font-semibold">
-            Mrs. Rita Okelue
+            Nic Uzor
           </p>
+        </div>
+        <div>
+          <img src="/school_logo" alt="" />
         </div>
       </div>
     </div>
