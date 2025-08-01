@@ -58,11 +58,21 @@ function Contact() {
           <div className="space-y-6 text-center md:text-left">
             <h3 className="text-2xl font-bold">Get in Touch</h3>
             <p>
-              <strong>Contact our Infodesk:</strong> <a href="https://chat.whatsapp.com/IWdegKOk0z426qh8x0xIwN?mode=ac_t">Infodesk</a>
+              <strong>Phone:</strong>  +2348039339004
+            </p>
+            <p>
+              <strong>Whatsapp Line:</strong> +2347064156326
             </p>
             <p>
               <strong>Email:</strong> <a href="mailto:divinegemsschool@gmail.com">divinegemsschool@gmail.com</a>
             </p>
+            <p>
+              <strong>Contact our Infodesk:</strong> <a href="https://chat.whatsapp.com/IWdegKOk0z426qh8x0xIwN?mode=ac_t">Infodesk</a>
+            </p>
+            <p>
+              <strong>Facebook:</strong> <a href="http://www.facebook.com/divinegemsschool">Facebook Page</a>
+            </p>
+
             <p>
               <strong>Address:</strong> 12, Ado-odo Street, Cement Bus-stop,
               Onilekere Ikeja Lagos
