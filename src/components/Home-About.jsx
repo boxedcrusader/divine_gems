@@ -15,8 +15,7 @@ function Home_About() {
               Be a Part of Our <br /> Academic Success Story
             </h3>
             <p className="text-base leading-relaxed mt-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Divine gems aims to build a strong academic foundation, guiding students from early stages to advanced studies. Our holistic approach ensures each student is ready for higher education and future careers.
             </p>
           </div>
           <div className="md:w-1/2 flex gap-4">
